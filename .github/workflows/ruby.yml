@@ -8,12 +8,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: Set up Ruby 2.6.x
+      - name: Set up Ruby 2.6.3
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: 2.6.x
+          ruby-version: 2.6.3
       - name: Build and run rspec
         run: |
+          apt-get install libsqlite3-dev
           gem install bundler
           gem install sqlite3 -v '1.4.1' --source 'https://rubygems.org/'
           bundle install --jobs 4 --retry 3
