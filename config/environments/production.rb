@@ -50,7 +50,7 @@ Rails.application.configure do
   # config.i18n.default_locale = :"en-US"
   # config.i18n.fallbacks = true
   # config.i18n.fallbacks = [I18n.default_locale]
-  config.i18n.fallbacks = [:en, :ko]
+  # config.i18n.fallbacks = [:en, :ko]
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
