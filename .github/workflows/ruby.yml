@@ -18,4 +18,4 @@ jobs:
           gem install bundler
           gem install sqlite3 -v '1.4.1' --source 'https://rubygems.org/'
           bundle install --jobs 4 --retry 3
-          bunble exec rspec spec/
+          bundle exec rspec spec/
